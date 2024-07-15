@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thesis Writing Services & Research Institute</title>
+    <meta name="description" content="Professional thesis writing and research services for students and researchers.">
+    <meta name="keywords" content="thesis writing, research services, academic writing, proofreading, editing">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +24,10 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77abff 3px solid;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         header a {
             color: #fff;
@@ -36,7 +42,7 @@
         header li {
             float: left;
             display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
             float: left;
@@ -61,6 +67,7 @@
         }
         .main-content {
             padding: 20px;
+            padding-top: 100px; /* Adjust padding to avoid content being hidden behind fixed header */
         }
         .main-content h2 {
             color: #333;
@@ -85,6 +92,27 @@
         }
         .social a:hover {
             color: #77abff;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #77abff;
         }
     </style>
 </head>
@@ -113,38 +141,63 @@
     <div class="container">
         <div class="main-content">
             <h2>About Us</h2>
-            <p>We provide Thesis, Articles, Synopsis, Proof reading, Editing, Formatting and Plagiarism checking, Plagiarism Removing, Data Collection, Data Analysis.</p>
-            <p>Our key characteristics:</p>
+            <p>Welcome to Thesis Writing Services & Research Institute. We are dedicated to providing comprehensive support for all your academic writing needs. From thesis and articles to data analysis and plagiarism checking, we ensure the highest quality and confidentiality in every project.</p>
+            <h3>Our Mission</h3>
+            <p>To empower researchers and students by providing high-quality, professional writing and research services, ensuring academic excellence and integrity.</p>
+            <h3>Our Vision</h3>
+            <p>To be a leading provider of academic writing and research services, recognized for our commitment to quality, innovation, and customer satisfaction.</p>
+            <h3>Meet Our Team</h3>
+            <p>Our team comprises experienced academics and researchers with expertise across various disciplines, ready to assist you in achieving your academic goals.</p>
+            <h3>Key Characteristics</h3>
             <ul>
-                <li>Privacy and secrecy guaranteed.</li>
-                <li>Within the due date.</li>
-                <li>Payment in instalments.</li>
-                <li>Défense preparation and slides etc.</li>
-                <li>Free proofreading, editing, and formatting.</li>
-                <li>Responsible till final approval.</li>
-                <li>Overall lenient and cooperative in dealing.</li>
-                <li>Professional and high standards work.</li>
-                <li>Unlimited free modification.</li>
+                <li>Privacy and confidentiality guaranteed.</li>
+                <li>Timely delivery of all projects.</li>
+                <li>Flexible payment options, including installments.</li>
+                <li>Comprehensive support, including defense preparation and slide creation.</li>
+                <li>Free proofreading, editing, and formatting services.</li>
+                <li>Commitment to final approval of your work.</li>
+                <li>Friendly and cooperative service approach.</li>
+                <li>High standards of professionalism and quality.</li>
+                <li>Unlimited free modifications to meet your requirements.</li>
             </ul>
         </div>
 
         <div id="services" class="services">
             <h2>Our Services</h2>
-            <ul>
-                <li>Thesis Writing</li>
-                <li>Article Writing</li>
-                <li>Synopsis Writing</li>
-                <li>Proofreading</li>
-                <li>Editing</li>
-                <li>Formatting</li>
-                <li>Plagiarism Checking and Removing</li>
-                <li>Data Collection</li>
-                <li>Data Analysis</li>
-            </ul>
+            <h3>Thesis Writing</h3>
+            <p>Comprehensive thesis writing support from topic selection to final submission, ensuring high-quality research and adherence to academic standards.</p>
+            <h3>Article Writing</h3>
+            <p>Expert article writing services for academic publications, including research articles, reviews, and case studies.</p>
+            <h3>Synopsis Writing</h3>
+            <p>Professional synopsis writing to help you present your research proposal effectively and secure approval.</p>
+            <h3>Proofreading</h3>
+            <p>Detailed proofreading to ensure your documents are error-free and polished.</p>
+            <h3>Editing</h3>
+            <p>Comprehensive editing services to enhance the clarity, coherence, and overall quality of your work.</p>
+            <h3>Formatting</h3>
+            <p>Formatting services to ensure your documents meet the required academic and publication standards.</p>
+            <h3>Plagiarism Checking and Removing</h3>
+            <p>Advanced plagiarism detection and removal to maintain the originality of your work.</p>
+            <h3>Data Collection</h3>
+            <p>Expert assistance in data collection methods, ensuring accurate and reliable data for your research.</p>
+            <h3>Data Analysis</h3>
+            <p>Professional data analysis using advanced statistical techniques and software to derive meaningful insights from your data.</p>
         </div>
 
         <div id="contact" class="contact">
             <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
             <p>Whatsapp: <a href="tel:+923055422112">+92 305 5422112</a></p>
             <p>Facebook: <a href="https://www.facebook.com/IslamabadThesisWriting" target="_blank">Islamabad Thesis Writing</a></p>
             <p>Instagram: <a href="https://www.instagram.com/thesis.writing.services" target="_blank">thesis.writing.services</a></p>
