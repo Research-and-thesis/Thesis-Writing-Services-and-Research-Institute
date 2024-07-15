@@ -19,11 +19,11 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #0066cc;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #77abff 3px solid;
+            border-bottom: #003366 3px solid;
             position: fixed;
             width: 100%;
             top: 0;
@@ -72,11 +72,11 @@
         .main-content h2 {
             color: #333;
         }
-        .services, .contact {
+        .services, .contact, .testimonials, .team, .faq {
             margin-top: 30px;
         }
         .footer {
-            background: #333;
+            background: #003366;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -106,13 +106,28 @@
             margin-bottom: 10px;
         }
         form button {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             border: none;
             cursor: pointer;
         }
         form button:hover {
             background-color: #77abff;
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .team img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .team .member {
+            text-align: center;
         }
     </style>
 </head>
@@ -125,7 +140,11 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -139,15 +158,13 @@
     </section>
 
     <div class="container">
-        <div class="main-content">
+        <div id="about" class="main-content">
             <h2>About Us</h2>
             <p>Welcome to Thesis Writing Services & Research Institute. We are dedicated to providing comprehensive support for all your academic writing needs. From thesis and articles to data analysis and plagiarism checking, we ensure the highest quality and confidentiality in every project.</p>
             <h3>Our Mission</h3>
             <p>To empower researchers and students by providing high-quality, professional writing and research services, ensuring academic excellence and integrity.</p>
             <h3>Our Vision</h3>
             <p>To be a leading provider of academic writing and research services, recognized for our commitment to quality, innovation, and customer satisfaction.</p>
-            <h3>Meet Our Team</h3>
-            <p>Our team comprises experienced academics and researchers with expertise across various disciplines, ready to assist you in achieving your academic goals.</p>
             <h3>Key Characteristics</h3>
             <ul>
                 <li>Privacy and confidentiality guaranteed.</li>
@@ -164,51 +181,115 @@
 
         <div id="services" class="services">
             <h2>Our Services</h2>
-            <h3>Thesis Writing</h3>
-            <p>Comprehensive thesis writing support from topic selection to final submission, ensuring high-quality research and adherence to academic standards.</p>
-            <h3>Article Writing</h3>
-            <p>Expert article writing services for academic publications, including research articles, reviews, and case studies.</p>
-            <h3>Synopsis Writing</h3>
-            <p>Professional synopsis writing to help you present your research proposal effectively and secure approval.</p>
-            <h3>Proofreading</h3>
-            <p>Detailed proofreading to ensure your documents are error-free and polished.</p>
-            <h3>Editing</h3>
-            <p>Comprehensive editing services to enhance the clarity, coherence, and overall quality of your work.</p>
-            <h3>Formatting</h3>
-            <p>Formatting services to ensure your documents meet the required academic and publication standards.</p>
-            <h3>Plagiarism Checking and Removing</h3>
-            <p>Advanced plagiarism detection and removal to maintain the originality of your work.</p>
-            <h3>Data Collection</h3>
-            <p>Expert assistance in data collection methods, ensuring accurate and reliable data for your research.</p>
-            <h3>Data Analysis</h3>
-            <p>Professional data analysis using advanced statistical techniques and software to derive meaningful insights from your data.</p>
+            <div class="card">
+                <h3>Thesis Writing</h3>
+                <p>Comprehensive thesis writing support from topic selection to final submission, ensuring high-quality research and adherence to academic standards.</p>
+            </div>
+            <div class="card">
+                <h3>Article Writing</h3>
+                <p>Expert article writing services for academic publications, including research articles, reviews, and case studies.</p>
+            </div>
+            <div class="card">
+                <h3>Synopsis Writing</h3>
+                <p>Professional synopsis writing to help you present your research proposal effectively and secure approval.</p>
+            </div>
+            <div class="card">
+                <h3>Proofreading</h3>
+                <p>Detailed proofreading to ensure your documents are error-free and polished.</p>
+            </div>
+            <div class="card">
+                <h3>Editing</h3>
+                <p>Comprehensive editing services to enhance the clarity, coherence, and overall quality of your work.</p>
+            </div>
+            <div class="card">
+                <h3>Formatting</h3>
+                <p>Formatting services to ensure your documents meet the required academic and publication standards.</p>
+            </div>
+            <div class="card">
+                <h3>Plagiarism Checking and Removing</h3>
+                <p>Advanced plagiarism detection and removal to maintain the originality of your work.</p>
+            </div>
+            <div class="card">
+                <h3>Data Collection</h3>
+                <p>Expert assistance in data collection methods, ensuring accurate and reliable data for your research.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analysis</h3>
+                <p>Professional data analysis using advanced statistical techniques and software to derive meaningful insights from your data.</p>
+            </div>
+        </div>
+
+        <div id="team" class="team">
+            <h2>Meet Our Team</h2>
+            <div class="card member">
+                <img src="team_member_1.jpg" alt="Team Member 1">
+                <h3>Dr. Tahir</h3>
+                <p>Head of Research</p>
+            </div>
+            <div class="card member">
+                <img src="team_member_2.jpg" alt="Team Member 2">
+                <h3>Dr. Sana</h3>
+                <p>Senior Researcher</p>
+            </div>
+            <div class="card member">
+                <img src="team_member_3.jpg" alt="Team Member 3">
+                <h3>Dr. Shiza</h3>
+                <p>Thesis Consultant</p>
+            </div>
+        </div>
+
+        <div id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="card">
+                <p>"Thesis Writing Services & Research Institute helped me complete my thesis on time with high-quality research and editing services. Highly recommended!" - Sarah K.</p>
+            </div>
+            <div class="card">
+                <p>"Their team is professional and supportive, providing excellent guidance throughout the research process." - Ahmed R.</p>
+            </div>
+        </div>
+
+        <div id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="card">
+                <h3>What services do you offer?</h3>
+                <p>We offer a wide range of academic writing and research services, including thesis writing, article writing, proofreading, editing, formatting, plagiarism checking, data collection, and data analysis.</p>
+            </div>
+            <div class="card">
+                <h3>How do you ensure confidentiality?</h3>
+                <p>We guarantee privacy and confidentiality for all our clients. Your personal information and work are kept secure and are not shared with third parties.</p>
+            </div>
+            <div class="card">
+                <h3>What is your pricing structure?</h3>
+                <p>Our pricing is competitive and flexible. We offer various packages and installment payment options to suit your budget and needs.</p>
+            </div>
         </div>
 
         <div id="contact" class="contact">
             <h2>Contact Us</h2>
-            <form action="submit_form.php" method="POST">
+            <form action="submit_contact_form.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
+
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
-            <p>Whatsapp: <a href="tel:+923055422112">+92 305 5422112</a></p>
-            <p>Facebook: <a href="https://www.facebook.com/IslamabadThesisWriting" target="_blank">Islamabad Thesis Writing</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/thesis.writing.services" target="_blank">thesis.writing.services</a></p>
         </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Thesis Writing Services & Research Institute. All Rights Reserved.</p>
-        <div class="social">
-            <a href="https://www.facebook.com/IslamabadThesisWriting" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/thesis.writing.services" target="_blank">Instagram</a>
+        <div class="container">
+            <p>&copy; 2024 Thesis Writing Services & Research Institute. All rights reserved.</p>
+            <div class="social">
+                <a href="https://www.facebook.com">Facebook</a> |
+                <a href="https://www.twitter.com">Twitter</a> |
+                <a href="https://www.linkedin.com">LinkedIn</a> |
+                <a href="https://www.instagram.com">Instagram</a>
+            </div>
         </div>
     </footer>
 </body>
